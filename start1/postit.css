@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+  font-family: "Indie Flower", cursive;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  background-color: #666666;
+}
+
+#post-it-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.post-it {
+  width: 290px;
+  text-align: center;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 4px 4px 12px 0px #312e2e;
+  box-shadow: inset 0px -30px 50px -20px #00000050;
+}
+#post-it-container .post-it h1 {
+  font-size: 2.5rem;
+}
+.post-it p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.post-it:nth-of-type(1),
+.post-it:nth-of-type(5),
+.post-it:nth-of-type(7) {
+  background-color: #fafac8;
+  transform: rotate(356deg);
+}
+
+.post-it:nth-of-type(2),
+.post-it:nth-of-type(4),
+.post-it:nth-of-type(8) {
+  background-color: #c4f1c6;
+  transform: rotate(6deg);
+}
+
+.post-it:nth-of-type(3),
+.post-it:nth-of-type(6) {
+  background-color: #c6c4ef;
+  transform: rotate(356deg);
+}
+
+.post-it:hover {
+  z-index: 1;
+  transform: rotate(0);
+  transform: scale(1.3);
+  box-shadow: 4px 6px 8px 4px #312e2e;
+  box-shadow: inset 0px -30px 50px -20px #00000050;
+}
