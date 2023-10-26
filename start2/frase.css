@@ -15,12 +15,39 @@ body {
 }
 i {
   color: #5f8096;
+  display: inline-block;
 }
 
 #testoAlternato {
-  width: 60%;
+  width: 70%;
   border: 5px solid black;
   margin-inline: auto;
   margin-top: 4rem;
   padding: 2rem 1.5rem;
+}
+
+.change-words {
+  position: absolute;
+  margin-left: 10px;
+  animation: fadeInOut 9s infinite;
+}
+
+.change-words:nth-child(2) {
+  opacity: 0;
+  animation-delay: 20s;
+}
+.change-words:nth-child(3) {
+  opacity: 0;
+  /* animation-delay: 6s; */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  80% {
+    opacity: 1;
+  }
 }
