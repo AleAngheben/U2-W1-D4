@@ -29,25 +29,14 @@ i {
 .change-words {
   position: absolute;
   margin-left: 10px;
-  animation: fadeInOut 9s infinite;
 }
 
 .change-words:nth-child(2) {
   opacity: 0;
-  animation-delay: 20s;
 }
 .change-words:nth-child(3) {
   opacity: 0;
-  /* animation-delay: 6s; */
 }
 
 @keyframes fadeInOut {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50%,
-  80% {
-    opacity: 1;
-  }
 }
